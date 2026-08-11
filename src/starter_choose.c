@@ -110,9 +110,10 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
     {8, 4},
 };
 
-#define GRASS_STARTER (IS_FRLG ? SPECIES_BULBASAUR  : SPECIES_TREECKO)
-#define FIRE_STARTER  (IS_FRLG ? SPECIES_CHARMANDER : SPECIES_TORCHIC)
-#define WATER_STARTER (IS_FRLG ? SPECIES_SQUIRTLE   : SPECIES_MUDKIP )
+//Go here to change your starters. Unsure if renaming types breaks anything
+#define GRASS_STARTER (SPECIES_POOCHYENA)
+#define FIRE_STARTER  (SPECIES_ZIGZAGOON)
+#define WATER_STARTER (SPECIES_WURMPLE)
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
