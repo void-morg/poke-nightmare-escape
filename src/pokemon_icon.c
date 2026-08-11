@@ -329,11 +329,13 @@ const u8 *GetMonIconTilesIsEgg(enum Species species, u32 personality, bool32 isE
     }
     else
     {
-#if P_GENDER_DIFFERENCES
+    /* Commenting this out, given the make process didn't like it despite P_GENDER_DIFFERENCES being FALSE, and thus making the loop vestigal
+    #if P_GENDER_DIFFERENCES
         if (gSpeciesInfo[species].iconSpriteFemale != NULL && IsPersonalityFemale(species, personality))
             iconSprite = gSpeciesInfo[species].iconSpriteFemale;
         else
-#endif
+    #endif
+    */
         if (gSpeciesInfo[species].iconSprite != NULL)
             iconSprite = gSpeciesInfo[species].iconSprite;
         else
