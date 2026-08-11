@@ -347,10 +347,12 @@ const u8 *GetMonIconTilesIsEgg(enum Species species, u32 personality, bool32 isE
 
 const u8 *GetMonIconTilesByIconType(enum Species species, enum SpeciesIconType iconType)
 {
+    
     if (iconType == EGG_ICON)
         return gEggDatas[gSpeciesInfo[species].eggId].eggIcon;
     if (iconType == FEMALE_ICON)
-        return gSpeciesInfo[species].iconSpriteFemale;
+    //Removed gender here due to lack of female specific mon sprites.
+        return gSpeciesInfo[species].iconSprite
     return gSpeciesInfo[species].iconSprite;
 }
 
